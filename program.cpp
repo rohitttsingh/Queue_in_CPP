@@ -30,6 +30,16 @@ void front(int arr[],int n){
     cout<<"\nFront element is "<<arr[0]<<endl<<endl;
 }
 
+void search(int arr[], int a, int n){
+    bool flag = false; int i;
+    for(i=0;i<n;i++){
+        if(arr[i]==a)
+        { flag=true; break;}
+    }
+    
+    cout<<((flag)? "Found \n" :"Not Found\n");
+    
+}
 
 int main(){
    
@@ -49,6 +59,8 @@ int main(){
     print(arr,n);
     cout<<endl;
     
+    cout<<"\nSearching for 34\n";
+    search(arr,34,n);
     
     remove(arr,&n);
     cout<<endl;
