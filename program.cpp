@@ -13,6 +13,10 @@ void insert(int arr[], int rear, int data){
 }
 
 void remove(int arr[], int *n){
+    if(*n<=0)
+    {
+        cout<<"Underflow\n\n";return;
+    }
     for(int rear = 0; rear<*n ;rear++){
         arr[rear] = arr[rear+1];
     }
